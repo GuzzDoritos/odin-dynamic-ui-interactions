@@ -49,3 +49,9 @@ window.addEventListener("click", (e) => {
         Dropdown.currentOpenDropdown.close();
     }
 })
+
+window.addEventListener("keydown", e => {
+    if (Dropdown.currentOpenDropdown && e.key === "Escape") {
+        Dropdown.currentOpenDropdown.close();
+    }
+})
