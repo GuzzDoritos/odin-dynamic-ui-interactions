@@ -1,5 +1,3 @@
-let dropdownList = [];
-
 const DROPDOWN_BTN_CLASS = "dropdown-btn";
 const DROPDOWN_MENU_CLASS = "dropdown-menu";
 
@@ -28,7 +26,7 @@ class Dropdown {
 }
 
 function createDropdowns() {
-    dropdownList = [];
+    const dropdownList = [];
 
     const dropdownButtonEls = document.body.querySelectorAll(`.${DROPDOWN_BTN_CLASS}`);
     const dropdownMenuEls = document.body.querySelectorAll(`.${DROPDOWN_MENU_CLASS}`);
